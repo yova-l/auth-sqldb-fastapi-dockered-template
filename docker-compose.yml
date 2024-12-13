@@ -1,0 +1,9 @@
+services:
+  fastapi:
+    image: test-template-fastapi
+    build: .
+    container_name: test-template-fastapi
+    ports:
+      - "8083:8080" # 8083 is the port on the host machine, change it to any port you want
+    volumes:
+      - .:/code
